@@ -1,0 +1,106 @@
+/* reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* css variables */
+:root {
+  --dark-primary-background: #002436;
+  --light-primary-background: #f1f1f1;
+  --light-text-color: #fff;
+  --dark-text-color: #333;
+  --main-content-padding: 2.5%;
+}
+
+/* navbar */
+.navbar-dark {
+  background: var(--dark-primary-background);
+}
+
+/* nav link hover effect */
+ul a:hover {
+  border-bottom: 1px solid #f2f2f2;
+  color: var(--dark-text-color);
+}
+
+
+
+
+/* INDEX.HTML */
+
+/* hero image */
+#trainImage {
+  height: 100vh;
+  background-attachment: fixed;
+  background: linear-gradient(rgba(123, 123, 123, 0.2), black),
+    url("../images/train_on_track.jpg") no-repeat center center/cover;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2.5%;
+  color: var(--light-text-color);
+}
+
+#trainImage .btn {
+  width: 100%;
+  /* CHANGE BUTTON WIDTH @ LG SCREENS */
+}
+
+/* c-t-a button */
+#trainImage a {
+  /* background: var(--primary-color); */
+  width: 20%;
+}
+
+/*INDEX.HTML PRICING SECTION (SMALL SCREENS)*/
+h1{
+  width: 50%;
+  margin: 0 auto;
+  /* border-left: .50rem solid blue; */
+}
+
+#pricing-hero > p, button{
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+
+/* button{
+  THIS CAN IMPACT THE NAV TOGGLER!!
+  display: none;
+  width: 30%;
+} */
+
+
+/* Pricing Cards */
+.pricing-cards{
+  padding: .50rem;
+}
+
+.wrapper{
+  display:grid;
+  /* margin: 1rem; */
+  background:#f1f1f1;
+  overflow: hidden;
+}
+
+.card-block p{
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+/* IMAGE WIDTH - SMALL SCREENS */
+.card-img > img{
+  width: 100%;
+}
+
+.card-info{
+  /* margin: 2.5rem; */
+  padding: 1.5rem;
+}
+/* END INDEX.HTML PRICING SECTION (SMALL SCREENS) */
+
+/* END: INDEX.HTML */

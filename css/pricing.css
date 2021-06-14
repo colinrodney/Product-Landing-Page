@@ -1,0 +1,171 @@
+
+/* PRICING CSS */
+
+:root {
+  --dark-primary-background: #002436;
+  --light-primary-background: #f1f1f1;
+  --light-text-color: #fff;
+  --dark-text-color: #333;
+  --main-content-padding: 2.5%;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* navbar */
+.navbar-dark {
+  background: var(--dark-primary-background);
+}
+
+
+/* PRICING PAGE */
+#pricing-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  background: url(../images/pricing/pricing-hero.jpg) no-repeat center
+    center/cover;
+  width: 100%;
+  height: 55vh;
+  padding: 1.5rem;
+}
+
+h1{
+  width: 50%;
+  margin: 0 auto;
+  /* border-left: .50rem solid blue; */
+}
+
+#pricing-hero > p, button{
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+button{
+  display: none;
+  width: 30%;
+}
+
+
+/* Pricing Cards */
+.pricing-cards{
+  padding: .50rem;
+}
+
+.wrapper{
+  display:grid;
+  /* margin: 1rem; */
+  background:#f1f1f1;
+}
+
+.card-img > img{
+  width:100%;
+}
+
+.card-info{
+  margin: 2.5rem;
+  padding: 2.5rem;
+}
+
+/* FOOTER */
+/* #main-footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width:100%;
+  background: #42525a;
+  text-align : center;
+  color: #fff ;
+  min-height: 10rem;                                 
+} */
+
+
+/* LARGER SCREENS */
+@media (min-width: 768px){
+  .wrapper{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+
+  }
+
+  .lead{
+    margin-bottom: 1rem;
+  }
+  
+ 
+
+  .card-block .card-img img{
+    width: 100%;
+    min-height: 100%;
+    object-fit: contain;
+  }
+
+  button{
+  display: initial;
+  /* width: 30%;*/
+}
+}
+
+@media(min-width: 992px){
+  .wrapper{
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+  }
+}
+
+
+
+
+/* contact us*/
+#contactUs {
+  background: var(--dark-primary-background);
+  color: var(--light-text-color);
+  padding: var(--main-content-padding);
+}
+
+#contactUs .container {
+  display: flex;
+  flex-direction: column;
+  /* order: 4; */
+  /* border: 1px solid gold; */
+  width: 90%;
+}
+
+#contactUs form,
+textarea,
+#contactUs button {
+  width: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+div#contactHeader {
+  text-align: center;
+}
+
+
+#aboutAmtrak .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#aboutAmtrak {
+  background: var(--light-primary-color);
+  width: 100%;
+  height: 65vh;
+  padding: 2.5%;
+}
+
+#aboutAmtrak p {
+  color: var(--dark-primary-color);
+}

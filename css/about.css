@@ -1,0 +1,96 @@
+/* ABOUT PAGE */
+
+
+/* reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* css variables */
+:root {
+  --dark-primary-background: #002436;
+  --light-primary-background: #f1f1f1;
+  --light-text-color: #fff;
+  --dark-text-color: #333;
+  --main-content-padding: 2.5%;
+}
+
+/* UTILITY CLASSES */
+
+/* ALL PARAGRAPHS W/ class='lead'*/
+p.lead {
+  font-size: 3rem;
+}
+
+/* NAVBAR */
+.navbar-dark {
+  background: var(--dark-primary-background);
+}
+
+/* nav link hover effect */
+ul a:hover {
+  border-bottom: 1px solid #f2f2f2;
+  color: var(--dark-text-color);
+}
+/* END UTILITY CLASSES */
+
+
+/* ABOUT PAGE */
+/* #aboutAmtrak .row{
+  margin-top: 20%; 
+} */
+
+#aboutAmtrak{
+  background-attachment: fixed;
+  background: linear-gradient(rgba(104,112,117,.2),rgba(0,0,0,.5)),url('../images/about/about-hero.jpg') no-repeat center center/cover;
+  object-fit: cover;
+  width: 100%;
+  height: 65vh;
+  padding: 2.5%;
+  color: #fff;
+}
+
+.jumbotron-fluid{
+  margin-top: 15%;
+}
+
+.jumbotron-fluid p{
+  max-width: 60ch;
+  margin-bottom: .5rem;
+}
+
+/* aboard train */
+#aboardTrain p {
+  background: var(--dark-primary-background);
+  color: var(--light-text-color);
+  margin-bottom: 2.5rem;
+}
+
+#aboardTrain {
+  background: var(--dark-primary-background);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+/* FOOTER */
+#main-footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width:100%;
+  background: #42525a;
+  text-align : center;
+  color: #fff ;
+  min-height: 20rem;                                 
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 768px){
+   .jumbotron-fluid{
+    margin-top: 10%;
+  }
+}
