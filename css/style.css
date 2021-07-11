@@ -144,6 +144,20 @@ button {
 }
 
 /* ABOUT PAGE: hero image */
+.col-lg-12 {
+  position: absolute;
+  top: 48%;
+  left: -5%;
+}
+
+.col-lg-12 p {
+  display: none;
+}
+
+.col-lg-12 h1 {
+  font-size: 1.5rem;
+}
+
 .jumbotron-fluid {
   margin: 2rem;
 }
@@ -234,6 +248,25 @@ CREATE 3 COLUMN GRID LAYOUT @ LARGER SCREENS */
 
 /* ABOUT.HTML + FOOTER (ALL PAGES) */
 @media (min-width: 768px) {
+  .col-lg-12 {
+    position: absolute;
+    top: 35%;
+    left: 0%;
+    max-width: 60ch;
+  }
+
+  /* show about page paragraph >= 768px  */
+  .col-lg-12 p {
+    display: initial;
+  }
+
+  .about-page-button {
+    position: relative;
+    display: block;
+    margin: 0.7rem 0 0 0;
+    width: 30%;
+  }
+
   .jumbotron-fluid {
     margin-top: 10%;
   }
