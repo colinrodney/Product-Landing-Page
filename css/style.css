@@ -65,7 +65,8 @@ ul a:hover {
   margin: 0 auto;
 } */
 
-#pricing-hero > p, button{
+#pricing-hero > p,
+button {
   font-weight: 400;
   font-size: 2rem;
 }
@@ -76,41 +77,39 @@ ul a:hover {
   width: 30%;
 } */
 
-
 /* Pricing Cards */
-.pricing-cards{
-  background:#f1f1f1;
-  padding: .50rem;
+.pricing-cards {
+  background: #f1f1f1;
+  padding: 0.5rem;
 }
 
-.wrapper{
-  display:grid;
+.wrapper {
+  display: grid;
   overflow: hidden;
 }
 
-.card-block p{
+.card-block p {
   font-size: 1.5rem;
   font-weight: 400;
 }
 
 /* IMAGE WIDTH - SMALL SCREENS */
-.card-img > img{
+.card-img > img {
   width: 100%;
 }
 
-.card-info{
+.card-info {
   /* margin: 2.5rem; */
   padding: 1.5rem;
 }
 
-.fas{
+.fas {
   /* create space between link text + FA icons - ADD THIS TO index.css!! */
   margin-left: 1rem;
 }
 /* END INDEX.HTML PRICING SECTION (SMALL SCREENS) */
 
 /* END: INDEX.HTML */
-
 
 /* ABOUT PAGE */
 /* ABOUT PAGE: aboard train */
@@ -133,9 +132,10 @@ ul a:hover {
   margin-top: 25%;  
 } */
 
-#aboutAmtrak{
+#aboutAmtrak {
   background-attachment: fixed;
-  background: linear-gradient(rgba(104,112,117,.2),rgba(0,0,0,.5)),url('../images/about/about-hero.jpg') no-repeat center center/cover;
+  background: linear-gradient(rgba(104, 112, 117, 0.2), rgba(0, 0, 0, 0.5)),
+    url("../images/about/about-hero.jpg") no-repeat center center/cover;
   object-fit: cover;
   width: 100%;
   height: 65vh;
@@ -144,27 +144,27 @@ ul a:hover {
 }
 
 /* ABOUT PAGE: hero image */
-.jumbotron-fluid{
-  margin-top: 15%;
+.jumbotron-fluid {
+  margin: 2rem;
 }
 
-.jumbotron-fluid p{
+.jumbotron-fluid p {
   max-width: 60ch;
 }
 
 /* FOOTER */
-#main-footer{
+#main-footer {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width:100%;
+  width: 100%;
   background: #42525a;
-  text-align : center;
-  color: #fff ;
-  min-height: 20rem;                                 
+  text-align: center;
+  color: #fff;
+  min-height: 20rem;
 }
 
-#main-footer p{
+#main-footer p {
   /* add this styling to the other stylesheets! */
   font-size: 1.5rem;
 }
@@ -175,7 +175,6 @@ ul a:hover {
   text-align: center;
   padding: 15px;
 }
-
 
 /* CONTACT.HTML PAGE */
 #contactUs {
@@ -192,10 +191,14 @@ ul a:hover {
   width: 90%;
 }
 
-#contactUs form,
-textarea,
-#contactUs button {
-  width: 100%;
+.wrapper {
+  background: #002436;
+  color: #fff;
+}
+
+form {
+  /* padding: 1rem; */
+  margin: auto;
 }
 
 li {
@@ -206,32 +209,32 @@ div#contactHeader {
   text-align: center;
 }
 
-div#contactHeader p{
+div#contactHeader p {
   width: 50%;
   margin: auto;
 }
 
+button[submit] {
+  width: 50%;
+}
+
 /* END: CONTACT.HTML PAGE */
-
-
-
 
 /* MEDIA QUERIES */
 
 /* INDEX.HTML PRICING SECTION 
 CREATE 3 COLUMN GRID LAYOUT @ LARGER SCREENS */
-@media(min-width: 992px){
-  .wrapper{
+@media (min-width: 992px) {
+  .wrapper {
     grid-template-rows: auto;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
   }
 }
 
-
 /* ABOUT.HTML + FOOTER (ALL PAGES) */
 @media (min-width: 768px) {
-  .jumbotron-fluid{
+  .jumbotron-fluid {
     margin-top: 10%;
   }
 
@@ -241,7 +244,7 @@ CREATE 3 COLUMN GRID LAYOUT @ LARGER SCREENS */
   }
 }
 
-@media(min-width: 992px){
+@media (min-width: 992px) {
   /* #aboutAmtrak .row{
     margin-top: 15%;
   } */
@@ -249,7 +252,7 @@ CREATE 3 COLUMN GRID LAYOUT @ LARGER SCREENS */
     margin-top: -20%;
   } */
 }
-  
+
 /* MOBILE SCREENS: LANDSCAPE MODE*/
 @media screen and (max-height: 576px) {
   /* about amtrak */
@@ -262,4 +265,4 @@ CREATE 3 COLUMN GRID LAYOUT @ LARGER SCREENS */
     margin-top: -1.2rem;
     font-size: 3.1rem;
   }
-} 
+}

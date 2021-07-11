@@ -35,8 +35,6 @@ ul a:hover {
   color: var(--dark-text-color);
 }
 
-
-
 /* CONTACT US + CONTACT FORM */
 #contactUs {
   background: var(--light-primary-background);
@@ -52,11 +50,11 @@ ul a:hover {
   width: 90%;
 }
 
-#contactUs form,
+/* #contactUs form,
 textarea,
 #contactUs button {
   width: 100%;
-}
+} */
 
 li {
   list-style-type: none;
@@ -66,11 +64,10 @@ div#contactHeader {
   text-align: center;
 }
 
-div#contactHeader p{
+div#contactHeader p {
   width: 50%;
   margin: auto;
 }
-
 
 #aboutAmtrak .container {
   display: flex;
@@ -89,20 +86,17 @@ div#contactHeader p{
   color: var(--dark-primary-color);
 }
 
-
-
 /* FOOTER */
-#main-footer{
+#main-footer {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width:100%;
+  width: 100%;
   background: #42525a;
-  text-align : center;
-  color: #fff ;
-  min-height: 20rem;                                 
+  text-align: center;
+  color: #fff;
+  min-height: 20rem;
 }
-
 
 @media (min-width: 768px) {
   #main-footer {
@@ -110,4 +104,3 @@ div#contactHeader p{
     align-items: center;
   }
 }
-

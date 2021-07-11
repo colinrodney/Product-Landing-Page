@@ -24,12 +24,11 @@
     />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
 
     <!-- USE THIS STYLESHEET WHEN NO @ CODEPEN! 
       <link rel="stylesheet" href="css/contact.css" />
     -->
-    
   </head>
   <body>
     <!-- 1: navbar + header -->
@@ -37,8 +36,8 @@
       <nav
         class="navbar navbar-expand-md navbar-dark dark-background-text-color"
       >
-      <a class="navbar-brand" href="index.html">Product Landing</a>
-      <!-- <button
+        <a class="navbar-brand" href="index.html">Product Landing</a>
+        <!-- <button
         class="navbar-toggler"
         type="button"
         data-toggle="collapse"
@@ -49,61 +48,60 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button> -->
-       <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="navbar-collapse collapse" id="navbarNav">
-        <ul class="text-center nav navbar-nav ml-auto">
-          <li class="nav-item">
-            <a
-              class="first-link nav-link"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              href="index.html"
-              >Home</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" 
-            aria-current="page"
-            href="about.html">About</a>
-          </li>
-          <li class="nav-item active">
-            <a
-            class = "nav-link"
-            aria-current="page"
-            href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarNav">
+          <ul class="text-center nav navbar-nav ml-auto">
+            <li class="nav-item">
+              <a
+                class="first-link nav-link"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="about.html"
+                >About</a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
         <!-- <div class="container">
         </div> -->
       </nav>
     </header>
 
-      <!-- CONTACT FORM -->
-        <section id="contactUs">
+    <!-- CONTACT FORM -->
+    <section id="contactUs">
       <div class="jumbotron-fluid">
         <div id="contactHeader">
           <h1>We'd Love to Hear From You!</h1>
           <p>
-            Have your clients reach out to you or share feedback with a contact form!
+            Have your clients reach out to you or share feedback with a contact
+            form!
           </p>
           <hr class="my-4" />
         </div>
       </div>
 
-
       <!-- CONTACT FORM -->
-      <div class="container">
+      <div class="container-md">
         <div class="row">
           <form>
             <div class="mb-3">
@@ -126,19 +124,22 @@
                 <label for="comments">Comments</label>
               </p>
               <textarea
+                class="form-control"
                 name="comments"
                 id="comments"
                 cols="60"
                 rows="5"
               ></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary col-6 col-md-9">
+              Submit
+            </button>
           </form>
         </div>
       </div>
     </section>
 
-     <!--4: Footer -->
+    <!--4: Footer -->
     <footer id="main-footer">
       <p>Colin R. Rodney</p>
       <p>&copy; 2021 All Rights Reserved</p>
@@ -173,3 +174,4 @@
       crossorigin="anonymous"
     ></script>
   </body>
+</html>
