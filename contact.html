@@ -105,19 +105,23 @@
         <div class="row">
           <form>
             <div class="mb-4">
-              <label for="exampleInputEmail1" class="form-label"
-                >Email address</label
-              >
+              <label for="name">Name</label>
               <input
-                type="email"
+                type="text"
                 class="form-control"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
+                id="name"
+                placeholder="First Name + Last Name"
               />
             </div>
             <div class="mb-4">
-              <label for="phoneNumber" class="form-label">Phone Number</label>
-              <input type="tel" class="form-control" id="phoneNumber" />
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                aria-describedby="emailHelp"
+                placeholder="name@someEmail.com"
+              />
             </div>
             <div class="mb-4">
               <label for="comments">Comments</label>
@@ -127,6 +131,7 @@
                 id="comments"
                 cols="60"
                 rows="5"
+                placeholder="Enter comments"
               ></textarea>
             </div>
             <button type="submit" class="btn btn-primary col-6 col-md-9">
