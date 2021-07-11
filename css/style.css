@@ -201,6 +201,11 @@ form {
   margin: auto;
 }
 
+/* rounded input fields */
+input.form-control {
+  border-radius: 50px;
+}
+
 li {
   list-style-type: none;
 }
