@@ -79,8 +79,8 @@ button {
 
 /* Excursion Cards */
 .pricing-cards {
-  background: #f1f1f1;
-  padding: 0.5rem;
+  background: #e2e0e0;
+  padding: 1rem;
 }
 
 .wrapper {
@@ -101,6 +101,7 @@ button {
 
 .card-info {
   /* margin: 2.5rem; */
+  background: #f7f5f5;
   padding: 1.5rem;
 }
 
